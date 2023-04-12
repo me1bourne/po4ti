@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project_Balakin", "Project_Balakin\Project_Balakin.csproj", "{FED936AF-D033-4481-8096-50271B302A1C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FED936AF-D033-4481-8096-50271B302A1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FED936AF-D033-4481-8096-50271B302A1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FED936AF-D033-4481-8096-50271B302A1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FED936AF-D033-4481-8096-50271B302A1C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1C18423D-465E-49B6-99D0-FE85DF4EBE77}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,22 @@
+﻿<Page x:Class="Project_Balakin.Page3"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Project_Balakin"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page3">
+
+    <Grid Background="LightSkyBlue">
+        <TextBlock HorizontalAlignment="Center" Text="Регистрация" FontSize="32" Width="200" Height="40" Margin="0,-375,0,0" Foreground="Black" FontWeight="Bold"></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Text="Введите почту:" FontSize="18" Foreground="Black" Margin="30,-250,0,0"  Width="145" Height="25" FontWeight="Bold"></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Text="Введите логин:" FontSize="18" Foreground="Black" Margin="30,-100,0,0" FontWeight="Bold" Width="145" Height="25"></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Text="Введите пароль:" FontSize="18" Foreground="Black" Margin="30,50,0,0" FontWeight="Bold"  Width="145" Height="25"></TextBlock>
+        <TextBox HorizontalAlignment="Left" Height="20" Width="225" Margin="30,-200,0,0"></TextBox>
+        <TextBox HorizontalAlignment="Left" Height="20" Width="225"  Margin="30,-50,0,0"></TextBox>
+        <TextBox HorizontalAlignment="Left" Height="20" Width="225"  Margin="30,100,0,0"></TextBox>
+        <Button Click="Button_Click1" ClickMode="Press" HorizontalAlignment="Left" Height="20" Width="100" Margin="30,200,0,0" Background="LightPink" FontWeight="Bold">Регистрация</Button>
+        <Button Click="Button_Click2" HorizontalAlignment="Left" Height="20" Width="110" Margin="150,200,0,0" Background="LightPink" FontWeight="Bold">Уже есть аккаунт?</Button>
+    </Grid>
+</Page>

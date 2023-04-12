@@ -1,0 +1,22 @@
+﻿<Page x:Class="Project_Balakin.Page2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Project_Balakin"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page2">
+    <Grid Background="LightSkyBlue">
+        <Button Height="20" Margin="20,-350,30,20" HorizontalAlignment="Left" Width="130" Foreground="White" FontWeight="Bold" Background="Black">Главная страница</Button>
+        <Button Height="20" Margin="300,-350,30,20" HorizontalAlignment="Left" Width="75" Foreground="White" FontWeight="Bold" Background="Black">Акции</Button>
+        <Button Click="Button_Click1" Height="20" Margin="400,-350,30,20" HorizontalAlignment="Left" Width="150" Foreground="White" FontWeight="Bold" Background="Black">Вход/Регистрация</Button>
+        <Button Height="50" Margin="600,-350,40,20" HorizontalAlignment="Left" Width="150" Background="Black" FontWeight="Bold" Foreground="White">Сделать заказ</Button>
+        <TextBlock Width="750" Height="350" Background="White" Margin="0,75,0,0"></TextBlock>
+        <TextBlock Text="Наши акции" HorizontalAlignment="Center" Width="100" Margin="0,-200,0,0" Height="50"  Foreground="Black"></TextBlock>
+        <TextBlock HorizontalAlignment="Center" Width="200" Margin="0,-100,0,0" Height="100"  Foreground="Black" FontWeight="Bold" Background="Black"></TextBlock>
+        <TextBlock HorizontalAlignment="Center" Width="200" Margin="415,-100,0,0" Height="80"  Foreground="Black" FontWeight="Bold" Background="Black"></TextBlock>
+        <TextBlock HorizontalAlignment="Center" Width="200" Margin="-415,-100,0,0" Height="80"  Foreground="Black" FontWeight="Bold" Background="Black"></TextBlock>
+        <Button Height="20" Margin="175,-350,30,20" HorizontalAlignment="Left" Width="100" Foreground="White" FontWeight="Bold" Background="Black">Каталог</Button>
+    </Grid>
+</Page>
