@@ -33,5 +33,10 @@ namespace Project_Balakin
         {
 
         }
+
+        private void Button_Click2(object sender, RoutedEventArgs e)
+        {
+            ClassFrame1.frame1.Navigate(new Page4());
+        }
     }
 }

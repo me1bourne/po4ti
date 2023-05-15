@@ -8,15 +8,31 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Page3">
 
-    <Grid Background="LightSkyBlue">
-        <TextBlock HorizontalAlignment="Center" Text="Регистрация" FontSize="32" Width="200" Height="40" Margin="0,-375,0,0" Foreground="Black" FontWeight="Bold"></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Text="Введите почту:" FontSize="18" Foreground="Black" Margin="30,-250,0,0"  Width="145" Height="25" FontWeight="Bold"></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Text="Введите логин:" FontSize="18" Foreground="Black" Margin="30,-100,0,0" FontWeight="Bold" Width="145" Height="25"></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Text="Введите пароль:" FontSize="18" Foreground="Black" Margin="30,50,0,0" FontWeight="Bold"  Width="145" Height="25"></TextBlock>
-        <TextBox HorizontalAlignment="Left" Height="20" Width="225" Margin="30,-200,0,0"></TextBox>
-        <TextBox HorizontalAlignment="Left" Height="20" Width="225"  Margin="30,-50,0,0"></TextBox>
-        <TextBox HorizontalAlignment="Left" Height="20" Width="225"  Margin="30,100,0,0"></TextBox>
-        <Button Click="Button_Click1" ClickMode="Press" HorizontalAlignment="Left" Height="20" Width="100" Margin="30,200,0,0" Background="LightPink" FontWeight="Bold">Регистрация</Button>
-        <Button Click="Button_Click2" HorizontalAlignment="Left" Height="20" Width="110" Margin="150,200,0,0" Background="LightPink" FontWeight="Bold">Уже есть аккаунт?</Button>
+    <Grid Background="LightSalmon">
+        <TextBox Height="20"
+                 Margin="0,-100,30,20" 
+                 HorizontalAlignment="Center" 
+                 Width="150"
+                 Name="box_login">
+        </TextBox>
+        <PasswordBox Height="20"
+                     Margin="0,-10,30,20" 
+                     HorizontalAlignment="Center" 
+                     Width="150"
+                     x:Name="box_password">
+        </PasswordBox>
+        <PasswordBox Height="20"
+                     Margin="0,40,30,20" 
+                     HorizontalAlignment="Center" 
+                     Width="150"
+                     x:Name="box_check_password">
+        </PasswordBox>
+        <TextBlock Height="20" Margin="0,-135,30,20" HorizontalAlignment="Center" Width="150" Foreground="Black" FontWeight="Bold">Введите логин:</TextBlock>
+        <TextBlock Height="20" Margin="0,-45,30,20" HorizontalAlignment="Center" Width="150" Foreground="Black" FontWeight="Bold">Введите пароль:</TextBlock>
+        <Image Source="img/222.png" Margin="0,0,-300,0" HorizontalAlignment="Right"></Image>
+        <Image Source="img/777.png" Height="100" HorizontalAlignment="Center" Margin="-30,-275,0,0"></Image>
+        <Button Click="Button_Click1" ClickMode="Press" HorizontalAlignment="Center" Width="100" Height="30" Margin="0,100,40,20" Background="Coral" FontWeight="Bold">Регистрация</Button>
+        <Image Source="img/444.png" Margin="-50,0,0,0" HorizontalAlignment="Left" Height="500"></Image>
+        <Button Click="Button_Click2" HorizontalAlignment="Center" Width="110" Height="30" Margin="0,175,40,20" Background="Coral" FontWeight="Bold">Уже есть аккаунт?</Button>
     </Grid>
 </Page>

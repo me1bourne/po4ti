@@ -26,17 +26,56 @@ namespace Project_Balakin
         }
         private void Button_Click1(object sender, RoutedEventArgs e)
         {
-            ClassFrame1.frame1.Navigate(new Page2());
+            NavigationCommands.BrowseBack.InputGestures.Clear();
+            NavigationCommands.BrowseForward.InputGestures.Clear();
+
+            if (box_login.Text.Length > 0)
+            {
+                if (box_password.Password.Length > 0)
+                {
+                    using (TESTEntities DataBase = new TESTEntities())
+                    {
+                        string login = box_login.Text;
+                        string password = box_password.Password;
+
+                        bool isUserExistsLoginAdm = DataBase.admins.Any(u => u.login == login);
+                        bool isUserExistsPassAdm = DataBase.admins.Any(u => u.password == password);
+                        bool isUserExistsLogin = DataBase.users.Any(u => u.login == login);
+                        bool isUserExistsPass = DataBase.users.Any(u => u.password == password);
+
+                        if (isUserExistsLoginAdm && isUserExistsPassAdm)
+                        {
+                            MessageBox.Show("Админ авторизовался");
+                            ClassFrame1.frame1.Navigate(new Page6());
+                        }
+                        else
+                        {
+                            if (isUserExistsLogin && isUserExistsPass)
+                            {
+                                MessageBox.Show("Пользователь авторизовался");
+                                ClassFrame1.frame1.Navigate(new Page2());
+                            }
+                            else
+                            {
+                                MessageBox.Show("Неверный логин или пароль");
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Введите пароль");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Введите логин");
+            }
         }
         private void Button_Click2(object sender, RoutedEventArgs e)
         {
             ClassFrame1.frame1.Navigate(new Page3());
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            ClassFrame1.frame1.Navigate(new Page2());
-        }
     }
-    }
+}
 

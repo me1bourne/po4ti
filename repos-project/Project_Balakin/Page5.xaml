@@ -8,7 +8,13 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Page5">
 
-    <Grid Background="LightSkyBlue">
+    <Grid Background="LightSalmon">
+        <Button Click="Button_Click1" Height="25" Margin="375,-345,30,20" HorizontalAlignment="Left" Width="150" Foreground="Black" FontWeight="Bold" Background="Coral">Вход/Регистрация</Button>
+        <Button Height="25" Margin="260,-345,30,20" HorizontalAlignment="Left" Width="100" Foreground="Black" FontWeight="Bold" Background="Coral">Каталог</Button>
+        <TextBlock Height="50" FontWeight="Bold" FontSize="32" Foreground="Black" Margin="80,-365,0,0" HorizontalAlignment="Left" >SNE4KERS</TextBlock>
+        <Image Source="img/777.png" Margin="-15,-370,0,0" Height="60" HorizontalAlignment="Left"></Image>
+        <TextBlock Background="LightSteelBlue" Height="10" Margin="0,-300,0,0" VerticalAlignment="Stretch"></TextBlock>
+        <TextBlock Width="800" Height="375" Background="white" Margin="0,75,0,0"  VerticalAlignment="Stretch"></TextBlock>
         
     </Grid>
 </Page>
